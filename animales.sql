@@ -11,4 +11,8 @@ CREATE TABLE animeles ( -- creamos la base de datos y su nombre
     PRIMARY KEY(id) -- para poder agregar ,mas datos necesitamos una llave primaria 
  
 );
+-- ahora agregraremos informacion alas columnas creadas 
+INSERT INTO animales (nombre,tipo)VALUES('raton','humano'); 
+-- pero no sea creado el auto incrementable en la base de datos del id 
+ALTER TABLE animales MODIFY COLUMN id int auto_increment; 
 
